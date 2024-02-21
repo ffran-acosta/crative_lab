@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Thunderhouse Pro";
+  src: url("https://db.onlinewebfonts.com/t/e8fafd4bab1ff229bb62067775369b8d.eot");
+  src: url("https://db.onlinewebfonts.com/t/e8fafd4bab1ff229bb62067775369b8d.eot?#iefix") format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e8fafd4bab1ff229bb62067775369b8d.woff2") format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e8fafd4bab1ff229bb62067775369b8d.woff") format("woff"),
+    url("https://db.onlinewebfonts.com/t/e8fafd4bab1ff229bb62067775369b8d.ttf") format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e8fafd4bab1ff229bb62067775369b8d.svg#Thunderhouse Pro") format("svg");
+}
+
 body {
   background-color: #000000;
+  font-family: "Thunderhouse Pro", sans-serif;
 }
 
 /* :root {
