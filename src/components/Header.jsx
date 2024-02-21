@@ -1,21 +1,21 @@
 const Header = () => {
     return (
         <header>
-            <div className="font-thunderhouse bg-black shadow">
-                <nav className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    <ul className="flex justify-between text-lg">
-                        <li className="flex space-x-4">
-                            <a href="" className="text-[#bd6097] hover:text-gray-700 font-bold">
+            <div className="bg-black shadow">
+                <nav className="w-full m-auto py-6 px-4 sm:px-6 lg:px-8 justify-center">
+                    <ul className="flex justify-between tracking-wide items-center">
+                        <li>
+                            <a href="/" className="text-[#bd6097] hover:text-[#834167] text-5xl">
                                 MENU
                             </a>
                         </li>
-                        <li className="font-bold">
-                            <a href="/creative-lab" className="text-[#bd6097] hover:text-gray-700">
+                        <li className="mb-">
+                            <h2 className="text-[#bd6097]  text-7xl">
                                 CREATIVE LAB
-                            </a>
+                            </h2>
                         </li>
                         <li>
-                            <a href="/about-us" className="text-[#bd6097] hover:text-gray-700 font-bold">
+                            <a href="/about-us" className="text-[#bd6097] hover:text-[#834167]  text-5xl">
                                 ABOUT US
                             </a>
                         </li>
