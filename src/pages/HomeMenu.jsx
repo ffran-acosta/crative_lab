@@ -1,5 +1,3 @@
-// import Link from 'next/link';
-
 const HomeMenu = () => {
     return (
         <main className='container mx-auto'>
@@ -7,32 +5,24 @@ const HomeMenu = () => {
                 <nav className="w-full mx-auto py-6 px-4 sm:px-6 lg:px-8">
                     <ul className="flex flex-col items-center space-y-4 tracking-wide">
                         <li>
-                            {/* <Link href="/streams"> */}
-                                <a href="/streams-lab" className="text-[#bd6097] hover:text-[#834167] text-5xl">
-                                    STREAMS
-                                </a>
-                            {/* </Link> */}
+                            <a href="/streams-lab" className="text-[#bd6097] hover:text-[#834167] text-5xl">
+                                STREAMS
+                            </a>
                         </li>
                         <li>
-                            {/* <Link href="/content-creation"> */}
                             <a href="/content-creation-lab" className="text-[#bd6097] hover:text-[#834167] text-5xl">
-                                    CONTENT CREATION
-                                </a>
-                            {/* </Link> */}
+                                CONTENT CREATION
+                            </a>
                         </li>
                         <li>
-                            {/* <Link href="/cinematic-video"> */}
                             <a href="/cinematic-video-lab" className="text-[#bd6097] hover:text-[#834167] text-5xl">
-                                    CINEMATIC VIDEO
-                                </a>
-                            {/* </Link> */}
+                                CINEMATIC VIDEO
+                            </a>
                         </li>
                         <li>
-                            {/* <Link href="/photography"> */}
                             <a href="/photography-lab" className="text-[#bd6097] hover:text-[#834167] text-5xl">
-                                    PHOTOGRAPHY
-                                </a>
-                            {/* </Link> */}
+                                PHOTOGRAPHY
+                            </a>
                         </li>
                     </ul>
                 </nav>
