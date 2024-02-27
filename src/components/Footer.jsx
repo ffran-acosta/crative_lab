@@ -1,22 +1,37 @@
-import backgroundImage from '../assets/design_elements/BACKGROUND 1_ 3.png';
+import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
+import { IoMdMail } from "react-icons/io";
+
 const Footer = () => {
   const links = ["Instagram", "Facebook", "Gmail"];
-  
+
+  const getIcon = (link) => {
+    switch (link) {
+      case "Instagram":
+        return <FaInstagramSquare />;
+      case "Facebook":
+        return <FaFacebookSquare />;
+      case "Gmail":
+        return <IoMdMail />;
+      default:
+        return null;
+    }
+  };
+
   return (
-    <footer className="relative bg-transparent" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      <div className="max-w-screen-xl mx-auto py-8 text-4xl">
+    <footer className="">
+      <div className="max-w-screen-xl mx-auto  text-4xl">
         <div className="flex justify-between items-center text-[#bd6097]">
-          <span className="font-semibold">&copy; Copyright Creative Lab {new Date().getFullYear()}</span>       
+          <span className="font-semibold tracking-wider bg-black bg-opacity-40">&copy; Copyright Creative Lab {new Date().getFullYear()}</span>
           <ul className="flex list-none ">
             {links.map((link) => (
-              <li key={link}>
+              <li key={link} className='mx-2'>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mx-2 hover:opacity-75 hover:text-[#834167]"
-                  href={`https://${link}.com`}
+                  href={`https://${link.toLowerCase()}.com`}
                 >
-                  {link[0].toUpperCase() + link.slice(1)}
+                  {getIcon(link)}
                 </a>
               </li>
             ))}

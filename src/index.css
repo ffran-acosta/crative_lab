@@ -12,10 +12,15 @@
     url("https://db.onlinewebfonts.com/t/e8fafd4bab1ff229bb62067775369b8d.svg#Thunderhouse Pro") format("svg");
 }
 
-body {
-  background-image: url('/src/assets/design_elements/BACKGROUND\ 1_\ 3.png');
-  background-size: cover;
-  background-position: center;
-  background-color: #000000;
-  font-family: "Thunderhouse Pro", sans-serif;
-}
+  
+  body {
+    /* background-image: url('/src/assets/design_elements/BACKGROUND\ 1_\ 3.png'); */
+      background-image: url('/src/assets/backgorund/MENU1.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      /* Para mantener la imagen fija al hacer scroll */
+      background-color: #000000;
+      font-family: "Thunderhouse Pro", sans-serif;
+      
+    }

@@ -2,27 +2,19 @@ const HomeMenu = () => {
     return (
         <main className='container mx-auto'>
             <section className='py-10 '>
-                <nav className="w-full mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    <ul className="flex flex-col items-center space-y-4 tracking-wide">
-                        <li>
-                            <a href="/streams-lab" className="text-[#bd6097] hover:text-[#834167] text-5xl">
-                                STREAMS
-                            </a>
+                <nav className="flex w-full">
+                    <ul className="flex w-full flex-col items-center text-8xl">
+                        <li className="py-4">
+                            <a href="/streams-lab" className="text-[#bd6097] hover:text-[#834167]">STREAMS</a>
                         </li>
-                        <li>
-                            <a href="/content-creation-lab" className="text-[#bd6097] hover:text-[#834167] text-5xl">
-                                CONTENT CREATION
-                            </a>
+                        <li className="py-4">
+                            <a href="/content-creation-lab" className="text-[#bd6097] hover:text-[#834167]">CONTENT CREATION</a>
                         </li>
-                        <li>
-                            <a href="/cinematic-video-lab" className="text-[#bd6097] hover:text-[#834167] text-5xl">
-                                CINEMATIC VIDEO
-                            </a>
+                        <li className="py-4">
+                            <a href="/cinematic-video-lab" className="text-[#bd6097] hover:text-[#834167]">CINEMATIC VIDEO</a>
                         </li>
-                        <li>
-                            <a href="/photography-lab" className="text-[#bd6097] hover:text-[#834167] text-5xl">
-                                PHOTOGRAPHY
-                            </a>
+                        <li className="py-4">
+                            <a href="/photography-lab" className="text-[#bd6097] hover:text-[#834167]">PHOTOGRAPHY</a>
                         </li>
                     </ul>
                 </nav>
