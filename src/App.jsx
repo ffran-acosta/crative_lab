@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import AboutUs from './components/AbautUs';
-import { CinematicVideo, ContentCreation, HomeMenu, Streams, Photography } from './pages';
+import { CinematicVideo, ContentCreation, HomeMenu, Streams, Photography, AboutUs } from './pages';
 import Footer from './components/Footer';
+// import AboutUs from './pages/AboutUs';
 
 
 function App() {
