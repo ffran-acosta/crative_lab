@@ -18,17 +18,17 @@ const Footer = () => {
   };
 
   return (
-    <footer className="">
-      <div className="max-w-screen-xl mx-auto text-2xl lg:text-4xl">
+    <footer className=" mt-40 py-4">
+      <div className="max-w-screen-xl mx-auto text-2xl lg:text-6xl">
         <div className="flex justify-between items-center text-[#bd6097]">
-          <span className="font-semibold tracking-wider bg-black bg-opacity-40">&copy; Copyright Creative Lab {new Date().getFullYear()}</span>
-          <ul className="flex list-none ">
+          <span className="font-semibold tracking-wider bg-black bg-opacity-40 p-2">&copy; Copyright Creative Lab {new Date().getFullYear()}</span>
+          <ul className="flex list-none space-x-2 p-2">
             {links.map((link) => (
-              <li key={link} className='mx-2'>
+              <li key={link}>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mx-2 hover:opacity-75 hover:text-[#834167]"
+                  className="hover:opacity-75 hover:text-[#834167]"
                   href={`https://${link.toLowerCase()}.com`}
                 >
                   {getIcon(link)}

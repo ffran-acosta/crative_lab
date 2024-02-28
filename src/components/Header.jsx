@@ -3,7 +3,7 @@ import Logo from '../assets/logo/logo.png';
 const Header = () => {
     return (
         <header className="bg-transparent">
-            <nav className="flex justify-between items-center">
+            <nav className="flex justify-around items-center">
                 <a href="/" className="text-[#bd6097] hover:text-[#834167] text-3xl md:text-6xl lg:text-8xl ml-5">MENU</a>
                 <img
                     src={Logo}
