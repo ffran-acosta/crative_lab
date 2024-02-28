@@ -3,7 +3,7 @@ const HomeMenu = () => {
         <main className='container mx-auto'>
             <section className='py-10 '>
                 <nav className="flex w-full">
-                    <ul className="flex w-full flex-col items-center text-8xl">
+                    <ul className="flex w-full flex-col items-center text-4xl sm:text-4xl md:text-6xl lg:text-8xl">
                         <li className="py-4">
                             <a href="/streams-lab" className="text-[#bd6097] hover:text-[#834167]">STREAMS</a>
                         </li>

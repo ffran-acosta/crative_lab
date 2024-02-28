@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <footer className="">
-      <div className="max-w-screen-xl mx-auto  text-4xl">
+      <div className="max-w-screen-xl mx-auto text-2xl lg:text-4xl">
         <div className="flex justify-between items-center text-[#bd6097]">
           <span className="font-semibold tracking-wider bg-black bg-opacity-40">&copy; Copyright Creative Lab {new Date().getFullYear()}</span>
           <ul className="flex list-none ">
