@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col h-screen">
+      <div className="flex flex-col h-screen w-full">
         <Header />
         <main className="flex-grow flex justify-center items-center">
           <Routes>
