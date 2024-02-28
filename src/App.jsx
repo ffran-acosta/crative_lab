@@ -1,9 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import { CinematicVideo, ContentCreation, HomeMenu, Streams, Photography, AboutUs } from './pages';
+import { CinematicVideo, ContentCreation, HomeMenu, Streams, Photography, AboutUs, NotFound } from './pages';
 import Footer from './components/Footer';
-// import AboutUs from './pages/AboutUs';
 
 
 function App() {
@@ -19,6 +18,7 @@ function App() {
             <Route path="/cinematic-video-lab" element={<CinematicVideo />} />
             <Route path="/photography-lab" element={<Photography />} />
             <Route path="/about-us" element={<AboutUs />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer/>
