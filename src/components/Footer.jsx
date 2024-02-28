@@ -18,7 +18,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className=" mt-40 py-4">
+    <footer className="py-4">
       <div className="max-w-screen-xl mx-auto text-2xl lg:text-6xl">
         <div className="flex justify-between items-center text-[#bd6097]">
           <span className="font-semibold tracking-wider bg-black bg-opacity-40 p-2">&copy; Copyright Creative Lab {new Date().getFullYear()}</span>

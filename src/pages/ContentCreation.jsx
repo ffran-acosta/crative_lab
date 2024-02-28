@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player';
 
 const ContentCreation = () => {
   return (
-    <div className="flex flex-col items-center mt-24 w-full">
+    <div className="flex flex-col items-center mt-24 w-full mb-40">
       {/* Primer par */}
       <div className='w-full flex justify-center mb-4'>
         <div>
@@ -25,19 +25,21 @@ const ContentCreation = () => {
         </div>
       </div>
 
-      <div className='flex mt-40 w-10/12'>
+      <div className='flex flex-wrap justify-center mt-40'>
         <ReactPlayer
           url='https://vimeo.com/508006835'
           controls
+          style={{ width: '100%', maxWidth: '480px' }}
         />
         <ReactPlayer
           url='https://vimeo.com/508006835'
           controls
-
+          style={{ width: '100%', maxWidth: '480px' }}
         />
         <ReactPlayer
           url='https://vimeo.com/508006835'
           controls
+          style={{ width: '100%', maxWidth: '480px' }}
         />
       </div>
     </div>
