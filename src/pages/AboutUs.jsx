@@ -1,8 +1,9 @@
+import about from '../assets/au/about-us.png';
+
 const AboutUs = () => {
-    const imageUrl = '/src/assets/au/about-us.png';
     return (
         <div className="about-us-container">
-            <img src={imageUrl} alt="" />
+            <img src={about} alt="" />
         </div>
     );
 };
