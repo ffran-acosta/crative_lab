@@ -15,3 +15,36 @@ body {
   background-color: #000000;
   font-family: "Thunderhouse Pro", sans-serif;
 }
+
+
+
+/* @keyframes slide {
+  0% {
+    transform: translateX(100%);
+  } */
+
+  /* 100% {
+    transform: translateX(-100%);
+  }
+} */
+
+/* .animate-slide {
+  animation: slide 5s linear infinite;
+} */
+
+/* Ajusta el retraso escalonado basado en el índice */
+/* .delay-0 {
+  animation-delay: 0s;
+} */
+
+/* .delay-1 {
+  animation-delay: 1s;
+} */
+
+/* Ajusta los retrasos escalonados para más imágenes si es necesario */
+/* .delay-2 {
+  animation-delay: 2s;
+} */
+
+/* Agrega más clases de retraso según la cantidad de imágenes */
+/* .delay-3, .delay-4, etc. */
