@@ -1,45 +1,64 @@
-import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
+// import { FaArrowRight } from "react-icons/fa";
 
 const Footer = () => {
-  const links = ["Instagram", "Facebook", "Gmail"];
+    const handleSubmit = (event) => {
+        event.preventDefault();
+    };
 
-  const getIcon = (link) => {
-    switch (link) {
-      case "Instagram":
-        return <FaInstagramSquare />;
-      case "Facebook":
-        return <FaFacebookSquare />;
-      case "Gmail":
-        return <IoMdMail />;
-      default:
-        return null;
-    }
-  };
+    return (
+        <footer className="flex flex-col bg-customBlack text-customWhite ">
 
-  return (
-    <footer className="py-4">
-      <div className="max-w-screen-xl mx-auto text-2xl lg:text-6xl">
-        <div className="flex justify-between items-center text-[#bd6097]">
-          <span className="font-semibold tracking-wider bg-black bg-opacity-40 p-2">&copy; Copyright Creative Lab {new Date().getFullYear()}</span>
-          <ul className="flex list-none space-x-2 p-2">
-            {links.map((link) => (
-              <li key={link}>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:opacity-75 hover:text-[#834167]"
-                  href={`https://${link.toLowerCase()}.com`}
-                >
-                  {getIcon(link)}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </footer>
-  );
-};
+            <div className="w-full flex justify-around">
+                <div className="text-white w-1/2 text-start p-7">
+                    <section className="text-xl">
+                        <p className="text-white">GOT A PROJECT IN MIND?</p>
+                    </section>
+                    <section className="text-7xl font-medium">
+                        LET&#x27;S 
+                    </section>
+                    <section className="text-7xl font-medium">
+                        CONNECT
+                    </section>
+                </div>
+                <div className="p-7">
+                    <form action="" className="flex flex-col" onSubmit={handleSubmit}>
+                        <div className="flex">
+                            <input type="text" name="name" placeholder="Name" className="flex-1 m-1 p-2 bg-black text-white rounded-full border-none" required />
+                            <input type="email" name="email" placeholder="Email" className="flex-1 m-1 p-2 bg-black text-white rounded-full border-none" required />
+                        </div>
+                        <textarea name="message" placeholder="Message" className="flex-1 m-1 p-3 bg-black text-white rounded-full border-none" required></textarea>
+                        <button type="submit" className="m-1 p-1 bg-white text-customBlack rounded-full font-semibold">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
 
-export default Footer;
+            <div className="w-full text-center text-customViolet text-5xl py-32 font-extrabold">
+                DO YOU FEEL CREATIVE?
+            </div>
+
+            <div className="w-full text-customViolet pb-4 font-medium">
+                <nav className="flex justify-around list-none">
+                    <li>
+                        <a href="">INSTAGRAM </a>
+                    </li>
+                    <li>
+                        <a href="">BEHANCE </a>
+                    </li>
+                    <li>
+                        <a href="">EMAIL</a>
+                    </li>
+                    <li>
+                        <a href="">FACEBOOK </a>
+                    </li>
+                    <li>
+                        <a href="">YOUTUBE  </a>
+                    </li>
+                    {/* <FaArrowRight /> */}
+                </nav>
+            </div>
+
+        </footer>
+    )
+}
+
+export default Footer

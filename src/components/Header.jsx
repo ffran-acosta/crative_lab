@@ -1,17 +1,21 @@
-import Logo from '../assets/logo/logo.png';
-
 const Header = () => {
     return (
         <header className="bg-transparent">
-            <nav className="flex justify-around items-center">
-                <a href="/" className="text-[#bd6097] hover:text-[#834167] text-3xl md:text-6xl lg:text-8xl ml-5">MENU</a>
-                <img
-                    src={Logo}
-                    alt="Creative Lab Logo"
-                    className="w-1/3 md:w-1/4 lg:w-1/5 mt-5 transition-all duration-300 ease-in-out"
-                />
-
-                <a href="/about-us" className="text-[#bd6097] hover:text-[#834167] text-3xl md:text-6xl lg:text-8xl mr-5">ABOUT US</a>
+            <nav className="flex justify-between items-center">
+                <div className="text-customViolet text-xl md:text-xl lg:text-xl ml-5">
+                    Creative Lab
+                </div>
+                <div className="flex items-center">
+                    <a href="/projects" className="text-customViolet text-xl md:text-xl lg:text-xl mr-5">
+                        Projects
+                    </a>
+                    <a href="/contact" className="text-customViolet text-xl md:text-xl lg:text-xl mr-5">
+                        Contact
+                    </a>
+                </div>
+                <div className="text-customViolet text-xl md:text-xl lg:text-xl mr-5">
+                    <a href="mailto:you@example.com">you@example.com</a>
+                </div>
             </nav>
         </header>
     );

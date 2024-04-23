@@ -4,7 +4,13 @@ export default {
     './src/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customBlack: '#1a1a1a',
+        customViolet: '#8e5e9a',
+        customWhite: '#efebdb',
+      },
+    },
   },
   plugins: [],
 }
