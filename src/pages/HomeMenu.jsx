@@ -1,25 +1,17 @@
 const HomeMenu = () => {
     return (
-        <main className='container mx-auto'>
-            <section className='py-10 '>
-                <nav className="flex w-full">
-                    <ul className="flex w-full flex-col items-center text-4xl sm:text-4xl md:text-6xl lg:text-8xl">
-                        <li className="py-4">
-                            <a href="/streams-lab" className="text-[#bd6097] hover:text-[#834167]">STREAMS</a>
-                        </li>
-                        <li className="py-4">
-                            <a href="/content-creation-lab" className="text-[#bd6097] hover:text-[#834167]">CONTENT CREATION</a>
-                        </li>
-                        <li className="py-4">
-                            <a href="/cinematic-video-lab" className="text-[#bd6097] hover:text-[#834167]">CINEMATIC VIDEO</a>
-                        </li>
-                        <li className="py-4">
-                            <a href="/photography-lab" className="text-[#bd6097] hover:text-[#834167]">PHOTOGRAPHY</a>
-                        </li>
-                    </ul>
-                </nav>
-            </section>
-        </main>
+        <div className='h-screen w-full container mx-auto text-center text-customViolet flex justify-center items-center'>
+            <div className="w-1/2 flex flex-col justify-center">
+                <div className=" inline-block">
+                        <p className="font-extrabold text-7xl">CREATIVE</p>
+                        <p className="font-extrabold text-7xl">LAB</p>
+                        <p className="text-7xl font-extralight">COMPANY</p>
+                </div>
+            </div>
+            <div className="w-1/2">
+                {/* Aquí puedes añadir tu imagen en el futuro */}
+            </div>
+        </div>
     );
 };
 

@@ -1,8 +1,10 @@
-export const clients = [
+import ndn from '../assets/gifs/gif/ndn.webp'
+
+export const streamClients = [
     { 
         name: 'NADIE DICE NADA',
         img: '',
-        gif: '',
+        gif: ndn,
         link: '',
         description: 'WE DEVELOPED TOGETHER WITH LUZU TV THE PRODUCTION ON THE STREAM OF NADIE DICE NADA AT THE SPOTIFY MIAMI OFFICES.THIS PROJECT LASTED 5 DAYS GOING LIVE 3 HOURS PER DAYON TWITCH AND YOUTUBE',
 
