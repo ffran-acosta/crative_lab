@@ -2,7 +2,7 @@ import StreamCards from "../components/clientsCards/StreamCards"
 
 const Stream = () => {
     return (
-        <div className=" w-5/6">
+        <div className="flex w-11/12">
             <StreamCards/>
         </div>
     )

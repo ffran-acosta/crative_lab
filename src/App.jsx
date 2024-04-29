@@ -10,7 +10,7 @@ function App() {
     <Router>
       <div className="flex flex-col h-screen w-full">
         <Header />
-        <main className="flex-grow flex justify-center items-center">
+        <main className="flex justify-center flex-grow items-center w-full">
           <Routes>
             <Route path="/" element={<HomeMenu />} />
             <Route path='stream' element={<Stream />} />
