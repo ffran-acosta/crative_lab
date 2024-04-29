@@ -15,19 +15,15 @@ main {
   background-size: cover;
 }
 
-.menu-dropdown {
-  display: none;
-  animation: fadeIn 0.3s ease-in-out forwards;
+.menu-header:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px ;
+  transform: scaleX(0);
+  transition: transform 350ms ease-in-out;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.menu-header:hover:after {
+  transform: scaleX(1);
+  color: #af83c1;
 }

@@ -1,5 +1,3 @@
-// import { FaArrowRight } from "react-icons/fa";
-
 const Footer = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -8,8 +6,8 @@ const Footer = () => {
     return (
         <footer className="flex flex-col bg-customBlack text-customWhite ">
 
-            <div className="w-full flex justify-around">
-                <div className="text-white w-1/2 text-start p-7">
+            <div className="w-full flex flex-col md:flex-row">
+                <div className="text-white p-7 text-center md:w-1/2">
                     <section className="text-xl">
                         <p className="text-white">GOT A PROJECT IN MIND?</p>
                     </section>
@@ -36,27 +34,25 @@ const Footer = () => {
                 DO YOU FEEL CREATIVE?
             </div>
 
-            <div className="w-full text-customViolet pb-4 font-medium">
-                <nav className="flex justify-around list-none">
-                    <li>
-                        <a href="">INSTAGRAM </a>
+            <div className="flex w-full text-customViolet p-4 font-semibold ">
+                <nav className="flex w-full list-none flex-col text-center text-3xl md:flex-row justify-between md:text-2xl">
+                    <li className="pb-5 px-4">
+                        <a className="hover:text-customLightViolet" href="">INSTAGRAM </a>
                     </li>
-                    <li>
-                        <a href="">BEHANCE </a>
+                    <li className="pb-5 px-4">
+                        <a className="hover:text-customLightViolet" href="">BEHANCE </a>
                     </li>
-                    <li>
-                        <a href="">EMAIL</a>
+                    <li className="pb-5 px-4">
+                        <a className="hover:text-customLightViolet" href="">EMAIL</a>
                     </li>
-                    <li>
-                        <a href="">FACEBOOK </a>
+                    <li className="pb-5 px-4">
+                        <a className="hover:text-customLightViolet" href="">FACEBOOK </a>
                     </li>
-                    <li>
-                        <a href="">YOUTUBE  </a>
+                    <li className="pb-5 px-4">
+                        <a className="hover:text-customLightViolet" href="">YOUTUBE  </a>
                     </li>
-                    {/* <FaArrowRight /> */}
                 </nav>
             </div>
-
         </footer>
     )
 }

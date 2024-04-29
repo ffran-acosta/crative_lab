@@ -13,7 +13,7 @@ function App() {
         <main className="flex justify-center flex-grow items-center w-full">
           <Routes>
             <Route path="/" element={<HomeMenu />} />
-            <Route path='stream' element={<Stream />} />
+            <Route path='projects' element={<Stream />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
