@@ -25,7 +25,7 @@ const Footer = () => {
                             <input type="email" name="email" placeholder="Email" className="flex-1 m-1 p-2 bg-black text-white rounded-full border-none" required />
                         </div>
                         <textarea name="message" placeholder="Message" className="flex-1 m-1 p-3 bg-black text-white rounded-full border-none" required></textarea>
-                        <button type="submit" className="m-1 p-1 bg-white text-customBlack rounded-full font-semibold">SUBMIT</button>
+                        <button type="submit" className="m-1 p-1 bg-white text-customBlack rounded-full font-bold  hover:bg-customViolet duration-500 hover:text-white">SUBMIT</button>
                     </form>
                 </div>
             </div>

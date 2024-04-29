@@ -12,10 +12,10 @@ const Header = () => {
                     <a href="/">CREATIVE LAB</a>
                 </div>
                 <div className="hidden md:flex items-center font-bold">
-                    <a href="/projects" className="motion menu-header text-customViolet text-xl md:text-xl lg:text-xl mr-5 hover:text-customLightViolet">
+                    <a href="/projects" className="motion menu-header text-customViolet text-xl md:text-xl lg:text-xl mr-5 hover:text-customLightViolet hover:scale-110 duration-300">
                         PROJECTS
                     </a>
-                    <a href="/contact" className="menu-header text-customViolet text-xl md:text-xl lg:text-xl mr-5 hover:text-customLightViolet">
+                    <a href="/contact" className="menu-header text-customViolet text-xl md:text-xl lg:text-xl mr-5 hover:text-customLightViolet hover:scale-110 duration-300">
                         CONTACT
                     </a>
                 </div>
